@@ -3,6 +3,7 @@
 #include <array>
 #include <algorithm>
 #include <iostream>
+#include <iterator>
 
 int main() {
    std::cout << "Minimum of 12 and 7 is: " << std::min(12, 7)
