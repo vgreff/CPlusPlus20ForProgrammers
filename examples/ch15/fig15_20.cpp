@@ -36,10 +36,10 @@ int main() {
    const std::array ints1{1, 2, 3, 4, 5}; // has random-access iterators
    const std::list ints2{1, 2, 3}; // has bidirectional iterators
 
-   auto result1{customDistance(ints1.begin(), ints1.end())};
-   std::cout << "ints1 number of elements: " << result1 << "\n";
-   auto result2{customDistance(ints2.begin(), ints2.end())};
-   std::cout << "ints2 number of elements: " << result2 << "\n";
+   // auto result1{customDistance(ints1.begin(), ints1.end())};
+   // std::cout << "ints1 number of elements: " << result1 << "\n";
+   // auto result2{customDistance(ints2.begin(), ints2.end())};
+   // std::cout << "ints2 number of elements: " << result2 << "\n";
 }
 
 

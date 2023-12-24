@@ -14,7 +14,7 @@ int main() {
 
    std::string s1{"hi"};
    std::string s2{"bye"};
-   auto result{multiply(s1, s2)};
+   // auto result{multiply(s1, s2)};
 }
 
 

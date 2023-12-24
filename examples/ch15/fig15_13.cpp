@@ -1,7 +1,7 @@
 // fig15_13.cpp
 // Manipulating tuples.
-#include <fmt/format.h> 
 #include <iostream>
+#include <fmt/format.h> 
 #include <string>
 #include <tuple>
 
@@ -34,14 +34,14 @@ int main() {
          "Quantity", quantity, "Price", price);
    }
 
-   std::cout << "\nAccessing a tuple's elements by index number:\n";
-   auto hammer{getInventory(1)};
-   std::cout << fmt::format("{}: {}, {}: {}, {}: {}, {}: {:.2f}\n",
-      "Part number", std::get<0>(hammer), "Tool", std::get<1>(hammer),
-      "Quantity", std::get<2>(hammer), "Price", std::get<3>(hammer));
+   // std::cout << "\nAccessing a tuple's elements by index number:\n";
+   // auto hammer{getInventory(1)};
+   // std::cout << fmt::format("{}: {}, {}: {}, {}: {}, {}: {:.2f}\n",
+   //    "Part number", std::get<0>(hammer), "Tool", std::get<1>(hammer),
+   //    "Quantity", std::get<2>(hammer), "Price", std::get<3>(hammer));
 
-   std::cout << fmt::format("A Part tuple has {} elements\n",
-      std::tuple_size<Part>{}); // get the tuple size
+   // std::cout << fmt::format("A Part tuple has {} elements\n",
+   //    std::tuple_size<Part>{}); // get the tuple size
 }
 
 /**************************************************************************

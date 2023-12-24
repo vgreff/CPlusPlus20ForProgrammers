@@ -27,6 +27,7 @@ FetchContent_MakeAvailable(fmt)
 
 
 add_subdirectory(ch14)
+add_subdirectory(ch15)
 
 # include_directories(${CMAKE_SOURCE_DIR}/../libraries/fmt/include)
 

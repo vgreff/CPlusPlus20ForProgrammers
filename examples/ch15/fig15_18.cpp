@@ -20,7 +20,7 @@ int main() {
 
    foldingSum(1, 2, 3); // valid: all are int values
    foldingSum("s"s, "u"s, "m"s); // valid: all are std::string objects
-   foldingSum(1, 2.2, "hello"s); // error: three different types
+   // foldingSum(1, 2.2, "hello"s); // error: three different types
 }
 
 

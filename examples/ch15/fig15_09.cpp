@@ -16,7 +16,7 @@ int main() {
    using namespace std::string_literals;
    multiply(2, 5); // OK: int is Numeric
    multiply(2.5, 5.5); // OK: double is Numeric
-   multiply("2"s, "5"s); // error: string is not Numeric
+   // multiply("2"s, "5"s); // error: string is not Numeric
 } 
 
 
