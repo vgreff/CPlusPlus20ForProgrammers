@@ -45,7 +45,15 @@ int main() {
       }
    );
 
-   std::cout << "\nchars after generating A-C into elements 0-2: ";
+   // generate values for first three elements of chars with a lambda
+   std::ranges::generate_n(chars.begin(), 3,
+      []() { // lambda that takes no arguments
+         static char letter{'A'};
+         return letter++;
+      }
+   );
+
+   std::cout << "\nVG chars after generating A-C into elements 0-2: ";
    std::ranges::copy(chars, output);
    std::cout << "\n";
 }

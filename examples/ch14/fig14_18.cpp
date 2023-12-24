@@ -33,7 +33,16 @@ int main() {
          | std::views::transform([](int x) {return x * x;}), 
       output);
 
-   std::cout << "\nSkip 1000 even ints, then take five: ";
+   std::cout << "\nVG Squares of even ints less than 12 reversed: ";
+   for( auto v :  lessThan12
+         | std::views::reverse
+         | std::views::transform([](int x) {return x * x;})      ) 
+   {
+      std::cout 
+      << "val=" << v << " ";
+   }
+
+   std::cout << "\n\nSkip 1000 even ints, then take five: ";
    std::ranges::copy(
       evens | std::views::drop(1000) | std::views::take(5),
       output);

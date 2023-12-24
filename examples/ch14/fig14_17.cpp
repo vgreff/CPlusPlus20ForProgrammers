@@ -52,8 +52,15 @@ int main() {
       &Employee::getSalary);
    std::cout << "\nEmployees sorted in descending order by salary:\n";
    std::ranges::copy(employees, output);
-}
 
+   // sort Employees by salary; {} indicates that the algorithm should
+   // use its default comparison function
+   std::ranges::sort(employees, std::ranges::less{},
+      [](const auto& e) {return e.getSalary(); });
+   std::cout << "\nEmployees sorted in ascending order by salary:\n";
+   std::ranges::copy(employees, output);
+
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2021 by Deitel & Associates, Inc. and               *

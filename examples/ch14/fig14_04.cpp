@@ -6,7 +6,7 @@
 #include <vector> 
 
 int main() {
-   std::vector init{10, 2, 15, 4, 10, 6};
+   std::vector init{10, 2, 15, 4, 10, 5 , 6};
    std::ostream_iterator<int> output{std::cout, " "};
 
    std::vector v1{init}; // initialize with copy of init
@@ -15,8 +15,12 @@ int main() {
 
    // remove all 10s from v1                                
    auto removed{std::ranges::remove(v1, 10)};
-   v1.erase(removed.begin(), removed.end());
    std::cout << "\nv1 after removing 10s: ";
+   std::ranges::copy(v1, output);
+   std::cout << "\nremoved v1 after removing 10s: ";
+   std::ranges::copy(removed, output);
+   v1.erase(removed.begin(), removed.end());
+   std::cout << "\nv1 after erasing 10s: ";
    std::ranges::copy(v1, output);
 
    std::vector v2{init}; // initialize with copy of init

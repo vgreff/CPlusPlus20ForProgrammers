@@ -11,7 +11,7 @@
 int main() {
    std::array a1{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
    std::array a2{a1}; // initializes a2 with copy of a1
-   std::array a3{1, 2, 3, 4, 1000, 6, 7, 8, 9, 10};
+   std::array a3{1, 2, 3, 4, 1000, 60, 7, 8, 9, 10};
    std::ostream_iterator<int> output{std::cout, " "};
 
    std::cout << "a1 contains: ";

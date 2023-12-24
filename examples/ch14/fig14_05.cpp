@@ -18,7 +18,7 @@ int main() {
    std::ranges::copy(a1, output);
 
    std::array a2{10, 2, 15, 4, 10, 6};
-   std::array<int, a2.size()> c1{};
+   std::array<int, a2.size()> c1;
    std::cout << "\n\na2: ";
    std::ranges::copy(a2, output);
 
